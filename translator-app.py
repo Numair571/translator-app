@@ -9,7 +9,7 @@ root.resizable(0,0)
 root['bg'] = 'skyblue'
 
 #Header
-root.title('Made by Abhishek with ❤️')
+root.title('Made by Nummi with ❤️')
 Label(root, text="Language Translator", font="Ariel 20 bold").pack()
 
 Label(root,text="Enter text", font="Ariel 13 bold", bg="white smoke").place(x=165, y=90)

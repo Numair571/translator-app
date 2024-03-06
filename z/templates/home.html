@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+
+<body>
+    <form action="/translate" method="post">
+        from:
+        <div>
+            <select name='src'>Select source language
+                {% for i in data %}
+                <option value={{i}}>{{i}}</option>
+                {% endfor %}
+            </select>
+           
+        </div>
+        To:
+        <div>
+            <select name='dest'>Select source language
+                {% for i in data %}
+                <option value={{i}}>{{i}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        Text:<input type="text" style="height: 200px;width: 200px;" name="inp">
+        <input type="submit" value="Translate">
+</form>
+{{output}}
+</body>
+
+</html>
